@@ -1,0 +1,128 @@
+:root {
+    --bg: #0a0a0a;
+    --off-white: #F5F5F5;
+    --soft-blue: #5468E7;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    min-height: 4000px;
+}
+
+.logo {
+    color: var(--off-white);
+    position: relative;
+    text-decoration: none !important;
+}
+
+.logo-dot {
+    color: var(--soft-blue);
+}
+
+
+.mynavbar a {
+    color: var(--off-white);
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.mynavbar .get-acess {
+    text-decoration: none !important;
+    background-color: rgba(84, 104, 231, 0.5);
+    border-radius: 4px;
+    width: 11rem;
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../src/hero_img.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    margin-top: -6.5rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    /* font-family: 'Sacramento', cursive; */
+    font-size: 6rem;
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+.hero a {
+    color: var(--pink);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+/* Media Query */
+/* Extra large */
+@media (max-width: 1200px) {}
+
+/* laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+
+
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+}
