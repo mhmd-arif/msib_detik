@@ -12,8 +12,8 @@ body {
 }
 
 
-.mynavbar .container {
-    padding: 0 3.125rem;
+.mynavbar .navbar-nav {
+    left: 50%;
 }
 
 .mynavbar a {
@@ -34,13 +34,18 @@ body {
     color: var(--soft-blue);
 }
 
+.mynavbar .nav-link {
+    margin-right: 1.9rem;
+}
 
-.mynavbar .get-acess {
+.nav-link:last-child {
     text-decoration: none !important;
     background-color: rgba(84, 104, 231, 0.5);
     border-radius: 4px;
     font-size: 1.125rem;
-    width: 11rem;
+    width: 11.5rem;
+    margin-right: 0;
+
 }
 
 .mynavbar .offcanvas {
@@ -64,7 +69,7 @@ body {
     height: 100%;
     background-image: url(../src/hero_img.png);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     z-index: -1;
 
 }
@@ -115,9 +120,24 @@ body {
 
 /* Media Query */
 /* Extra large */
+@media (min-width: 1400px) {
+    .mynavbar .nav-link {
+        margin-right: 3.3rem;
+    }
+
+    .nav-link:last-child {
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 1200px) {
-    .home .heart {
-        transform: translateX(-50%) translateY(45px);
+    .mynavbar .nav-link {
+        margin-right: 1.12rem;
+    }
+
+    .nav-link:last-child {
+        margin-right: 0;
+        width: 9rem;
     }
 }
 
@@ -126,17 +146,21 @@ body {
     html {
         font-size: 75%;
     }
+
+    .mynavbar .nav-link {
+        margin-right: 1.6rem;
+    }
+
+    .nav-link:last-child {
+        margin-right: 0;
+        width: 7rem;
+    }
 }
 
 /* tablet */
 @media (max-width: 768px) {
     html {
-        font-size: 65%;
-    }
-
-    .mynavbar .nav-link {
-        font-size: 2rem;
-        text-align: center;
+        font-size: 70%;
     }
 
     .mynavbar .offcanvas {
@@ -148,10 +172,15 @@ body {
         color: var(--soft-blue);
     }
 
-    .mynavbar .get-acess {
+    .mynavbar .nav-link {
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav-link:last-child {
         color: var(--off-white);
         background-color: rgba(84, 104, 231, 1);
-        text-align: center;
+        margin-bottom: 0rem;
     }
 
     .sticky-top {
@@ -164,5 +193,4 @@ body {
     html {
         font-size: 60%;
     }
-
 }
