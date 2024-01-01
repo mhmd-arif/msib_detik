@@ -11,28 +11,35 @@ body {
     min-height: 4000px;
 }
 
-.logo {
-    color: var(--off-white);
-    position: relative;
-    text-decoration: none !important;
-}
 
-.logo-dot {
-    color: var(--soft-blue);
+.mynavbar .container {
+    padding: 0 3.125rem;
 }
-
 
 .mynavbar a {
     color: var(--off-white);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: underline;
 }
+
+.mynavbar .logo {
+    color: var(--off-white);
+    position: relative;
+    text-decoration: none !important;
+    font-size: 3.125rem;
+}
+
+.mynavbar .logo-dot {
+    color: var(--soft-blue);
+}
+
 
 .mynavbar .get-acess {
     text-decoration: none !important;
     background-color: rgba(84, 104, 231, 0.5);
     border-radius: 4px;
+    font-size: 1.125rem;
     width: 11rem;
 }
 
@@ -63,11 +70,15 @@ body {
 }
 
 .hero {
+    font-family: 'Lexend Deca', sans-serif;
     position: relative;
     min-height: 100vh;
     margin-top: -6.5rem;
     padding-top: 15rem;
     padding-bottom: 5rem;
+    color: var(--off-white);
+    padding: 0 500px;
+
 }
 
 .hero h1,
@@ -77,12 +88,14 @@ body {
 }
 
 .hero h1 {
-    /* font-family: 'Sacramento', cursive; */
-    font-size: 6rem;
+    font-size: 3.125rem;
+    font-weight: 700;
 }
 
 .hero h4 {
-    font-size: 1.6rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+
 }
 
 .hero p {
@@ -102,21 +115,47 @@ body {
 
 /* Media Query */
 /* Extra large */
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .home .heart {
+        transform: translateX(-50%) translateY(45px);
+    }
+}
 
 /* laptop */
 @media (max-width: 992px) {
     html {
         font-size: 75%;
     }
-
-
 }
 
 /* tablet */
 @media (max-width: 768px) {
     html {
         font-size: 65%;
+    }
+
+    .mynavbar .nav-link {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .mynavbar .offcanvas {
+        background-color: var(--off-white);
+        color: var(--soft-blue);
+    }
+
+    .mynavbar a {
+        color: var(--soft-blue);
+    }
+
+    .mynavbar .get-acess {
+        color: var(--off-white);
+        background-color: rgba(84, 104, 231, 1);
+        text-align: center;
+    }
+
+    .sticky-top {
+        overflow: hidden;
     }
 }
 
@@ -125,4 +164,5 @@ body {
     html {
         font-size: 60%;
     }
+
 }
