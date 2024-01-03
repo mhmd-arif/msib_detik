@@ -12,21 +12,18 @@ body {
   background-color: var(--off-white);
 }
 
-.row {
+p .row,
+.row > * {
   padding: 0rem !important;
   margin: 0rem !important;
 }
-
-/* .figure {
-  min-height: 4000px;
-} */
 
 .container-fluid {
   margin: 0rem 8.75rem !important;
   padding: 0rem !important;
 }
 
-/* navbar start */
+/* start navbar */
 .mynavbar {
   margin-top: 2.5rem !important;
   padding: 0rem !important;
@@ -78,9 +75,9 @@ body {
   font-size: 3.2rem;
   font-weight: 600;
 }
-/* navbar end */
+/* end navbar */
 
-/* hero start*/
+/* start hero */
 .hero::before {
   content: "";
   position: absolute;
@@ -107,12 +104,10 @@ body {
 }
 
 .hero h1,
-.hero h4,
-.hero p,
-.hero form {
+.hero p {
   text-shadow: var(--shadow);
   width: 100%;
-  padding: 0rem;
+  /* padding: 0rem; */
 }
 
 .hero h1 {
@@ -120,7 +115,7 @@ body {
   font-weight: 700;
 }
 
-.hero h4 {
+.hero p {
   font-size: 1.125rem;
   font-weight: 400;
   margin-top: 1rem;
@@ -158,9 +153,83 @@ body {
   margin-right: 1.4rem;
   padding: 0.625rem 2.75rem;
 }
-/* hero end */
+/* end hero */
 
-/*  */
+/* start article */
+article {
+  min-height: 100vh;
+}
+
+.img-container {
+  margin: 0rem !important;
+  min-width: 565px;
+  min-height: 565px;
+  position: relative;
+}
+
+.text-content {
+  max-width: 28.5rem;
+}
+
+.text-content h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.text-content p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.688rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.text-content a {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.688rem;
+}
+
+/* article 2 */
+.img-article-2-calendar {
+  position: absolute;
+  top: 1.5rem;
+  left: 18rem;
+  z-index: 1;
+}
+
+/* article 3 */
+.img-article-3-top {
+  position: absolute;
+  top: 16.5rem;
+  left: 22rem;
+  z-index: 1;
+}
+
+.img-article-3-bot {
+  position: absolute;
+  top: 22.5rem;
+  left: 22rem;
+  z-index: 1;
+}
+
+/* article 4 */
+.img-article-4-top {
+  position: absolute;
+  top: 16.5rem;
+  left: 1.8rem;
+  z-index: 1;
+}
+
+.img-article-4-bot {
+  position: absolute;
+  top: 29rem;
+  left: 1.8rem;
+  z-index: 1;
+}
+
+/* end article */
 
 /* Media Query */
 /* Extra large */
