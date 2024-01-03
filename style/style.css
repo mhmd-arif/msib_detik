@@ -191,6 +191,35 @@ article {
   line-height: 1.688rem;
 }
 
+/* article 1 */
+.img-article-1-task-today {
+  position: absolute;
+  top: 0.5rem;
+  left: 0rem;
+  z-index: 1;
+}
+
+.img-article-1-dashboard {
+  position: absolute;
+  top: 0rem;
+  left: 6.8rem;
+  z-index: 2;
+}
+
+.img-article-1-mentors {
+  position: absolute;
+  top: 19.5rem;
+  left: -1.5rem;
+  z-index: 3;
+}
+
+.img-article-1-send {
+  position: absolute;
+  top: 18.5rem;
+  left: 15.5rem;
+  z-index: 4;
+}
+
 /* article 2 */
 .img-article-2-calendar {
   position: absolute;
