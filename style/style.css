@@ -1,196 +1,243 @@
 :root {
-    --bg: #0a0a0a;
-    --off-white: #F5F5F5;
-    --soft-blue: #5468E7;
-    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+  --bg: #0a0a0a;
+  --off-white: #f5f5f5;
+  --soft-blue: #5468e7;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
 body {
-    font-size: 1.2rem;
-    font-family: 'Lexend Deca', sans-serif;
-    min-height: 4000px;
+  font-size: 1.2rem;
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 4000px;
+  background-color: var(--off-white);
 }
 
+.row {
+  padding: 0rem !important;
+  margin: 0rem !important;
+}
 
+/* .figure {
+  min-height: 4000px;
+} */
+
+.container-fluid {
+  margin: 0rem 8.75rem !important;
+  padding: 0rem !important;
+}
+
+/* navbar start */
+.mynavbar {
+  margin-top: 2.5rem !important;
+  padding: 0rem !important;
+}
 .mynavbar .navbar-nav {
-    left: 50%;
+  left: 50%;
 }
 
 .mynavbar a {
-    color: var(--off-white);
-    font-size: 1rem;
-    font-weight: 400;
-    text-decoration: underline;
+  color: var(--off-white);
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: underline;
+  padding: 0rem !important;
 }
 
-.mynavbar .logo {
-    color: var(--off-white);
-    position: relative;
-    text-decoration: none !important;
-    font-size: 3.125rem;
+.navbar-brand {
+  color: var(--off-white);
+  text-decoration: none !important;
+  font-size: 3.125rem;
+  margin-top: 0rem !important;
 }
 
-.mynavbar .logo-dot {
-    color: var(--soft-blue);
+.brand-dot {
+  color: var(--soft-blue);
 }
 
 .mynavbar .nav-link {
-    margin-right: 1.9rem;
+  margin-right: 3.5rem !important ;
 }
 
 .nav-link:last-child {
-    text-decoration: none !important;
-    background-color: rgba(84, 104, 231, 0.5);
-    border-radius: 4px;
-    font-size: 1.125rem;
-    width: 11.5rem;
-    margin-right: 0;
-
+  text-decoration: none !important;
+  background-color: rgba(84, 104, 231, 0.5);
+  border-radius: 4px;
+  font-size: 1.125rem;
+  width: 11.5rem;
+  margin-right: 0 !important;
+  padding: 0.625rem 2.75rem !important;
 }
 
 .mynavbar .offcanvas {
-    height: 100vh;
+  height: 100vh;
 }
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 3.2rem;
-    font-weight: 600;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
 }
+/* navbar end */
 
+/* hero start*/
 .hero::before {
-    content: '';
-    position: absolute;
-    min-height: 100vh;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../src/hero_img.png);
-    background-size: cover;
-    background-position: right;
-    z-index: -1;
-
+  content: "";
+  position: absolute;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../src/img/hero_img.webp);
+  background-size: cover;
+  background-position: right;
+  z-index: -1;
 }
 
 .hero {
-    font-family: 'Lexend Deca', sans-serif;
-    position: relative;
-    min-height: 100vh;
-    margin-top: -6.5rem;
-    padding-top: 15rem;
-    padding-bottom: 5rem;
-    color: var(--off-white);
-    padding: 0 500px;
-
+  font-family: "Lexend Deca", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  margin-top: -7.3rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  color: var(--off-white);
+  padding: 0 500px;
 }
 
 .hero h1,
 .hero h4,
-.hero p {
-    text-shadow: var(--shadow);
+.hero p,
+.hero form {
+  text-shadow: var(--shadow);
+  width: 100%;
+  padding: 0rem;
 }
 
 .hero h1 {
-    font-size: 3.125rem;
-    font-weight: 700;
+  font-size: 3.125rem;
+  font-weight: 700;
 }
 
 .hero h4 {
-    font-size: 1.125rem;
-    font-weight: 400;
-
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-top: 1rem;
 }
 
 .hero p {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .hero a {
-    color: var(--pink);
-    background-color: white;
-    box-shadow: var(--shadow);
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-    background-color: var(--pink);
-    color: white;
+  background-color: var(--pink);
+  color: white;
 }
+
+.email-input-container {
+  margin-top: 3.5rem;
+}
+
+.email-input {
+  width: 18.625rem !important;
+}
+
+.email-input-container .btn-input {
+  text-decoration: none !important;
+  background-color: rgba(84, 104, 231, 0.5);
+  border-radius: 4px;
+  font-size: 1.125rem;
+  color: var(--off-white);
+  margin-right: 1.4rem;
+  padding: 0.625rem 2.75rem;
+}
+/* hero end */
+
+/*  */
 
 /* Media Query */
 /* Extra large */
 @media (min-width: 1400px) {
-    .mynavbar .nav-link {
-        margin-right: 3.3rem;
-    }
+  .mynavbar .nav-link {
+    margin-right: 3.5rem;
+  }
 
-    .nav-link:last-child {
-        margin-right: 0;
-    }
+  .nav-link:last-child {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 1200px) {
-    .mynavbar .nav-link {
-        margin-right: 1.12rem;
-    }
+  html {
+    font-size: 80%;
+  }
+  .mynavbar .nav-link {
+    margin-right: 1.12rem;
+  }
 
-    .nav-link:last-child {
-        margin-right: 0;
-        width: 9rem;
-    }
+  .nav-link:last-child {
+    margin-right: 0;
+    width: 9rem;
+  }
 }
 
 /* laptop */
 @media (max-width: 992px) {
-    html {
-        font-size: 75%;
-    }
+  html {
+    font-size: 75%;
+  }
 
-    .mynavbar .nav-link {
-        margin-right: 1.6rem;
-    }
+  .mynavbar .nav-link {
+    margin-right: 1.6rem;
+  }
 
-    .nav-link:last-child {
-        margin-right: 0;
-        width: 7rem;
-    }
+  .nav-link:last-child {
+    margin-right: 0;
+    width: 7rem;
+  }
 }
 
 /* tablet */
 @media (max-width: 768px) {
-    html {
-        font-size: 70%;
-    }
+  html {
+    font-size: 70%;
+  }
 
-    .mynavbar .offcanvas {
-        background-color: var(--off-white);
-        color: var(--soft-blue);
-    }
+  .mynavbar .offcanvas {
+    background-color: var(--off-white);
+    color: var(--soft-blue);
+  }
 
-    .mynavbar a {
-        color: var(--soft-blue);
-    }
+  .mynavbar a {
+    color: var(--soft-blue);
+  }
 
-    .mynavbar .nav-link {
-        margin-right: 0rem;
-        margin-bottom: 1rem;
-    }
+  .mynavbar .nav-link {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
 
-    .nav-link:last-child {
-        color: var(--off-white);
-        background-color: rgba(84, 104, 231, 1);
-        margin-bottom: 0rem;
-    }
+  .nav-link:last-child {
+    color: var(--off-white);
+    background-color: rgba(84, 104, 231, 1);
+    margin-bottom: 0rem;
+  }
 
-    .sticky-top {
-        overflow: hidden;
-    }
+  .sticky-top {
+    overflow: hidden;
+  }
 }
 
 /* mobile phone */
 @media (max-width: 576px) {
-    html {
-        font-size: 60%;
-    }
+  html {
+    font-size: 60%;
+  }
 }
